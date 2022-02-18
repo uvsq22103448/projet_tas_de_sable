@@ -24,6 +24,14 @@ h=HEIGHT/8
 ####################
 # fonctions
 
+def affichage():
+    list=[[],[],[],[],[],[],[],[],[],[]]
+    racine = tk.Tk()
+    for i in range (8):
+        for j in range (8):
+            list[i].append(tk.Button(racine,padx=l,pady=h ))
+            list[i][j].grid(column=i, row=j)
+    return list
 
 # Presets
 
@@ -33,13 +41,8 @@ h=HEIGHT/8
 
 # création des widgets
 
-list=[[],[],[],[],[],[],[],[],[],[]]
-racine = tk.Tk()
-for i in range (8):
-    for j in range (8):
-        list[i].append(tk.Button(racine,padx=l,pady=h ))
-        list[i][j].grid(column=i, row=j)
 
+affichage()
 
 racine.mainloop()
 
