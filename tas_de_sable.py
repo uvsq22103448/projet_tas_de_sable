@@ -16,6 +16,10 @@ import random as rd
 ########################
 # constantes
 
+HEIGHT = 100
+WIDTH = 200
+l=WIDTH/8
+h=HEIGHT/8
 
 ####################
 # fonctions
@@ -29,5 +33,14 @@ import random as rd
 
 # création des widgets
 
+list=[[],[],[],[],[],[],[],[],[],[]]
+racine = tk.Tk()
+for i in range (8):
+    for j in range (8):
+        list[i].append(tk.Button(racine,padx=l,pady=h ))
+        list[i][j].grid(column=i, row=j)
+
+
+racine.mainloop()
 
 # Presets
