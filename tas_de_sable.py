@@ -19,7 +19,36 @@ import random as rd
 #######################
 
 #Boutons 
-    #de base
+    #de base + leur fonction à chacun
+
+root = tk.Tk() #pour diminuer les erreurs
+
+def Initialisation_bouton():
+    pass
+
+def Aleatoire_bouton():
+    pass
+
+def Sauvegarder_bouton():
+    pass
+
+def Charge_bouton():
+    pass
+
+def Additionner_bouton():
+    pass
+
+def Soustraire_bouton():
+    pass
+
+def Stabiliser_bouton():
+    pass
+
+def Interrompre_bouton():
+    pass
+
+def Reprendre_bouton():
+    pass
 
 Initialisation = tk.Button(root, text="Initialisation", fg="black", command= Initialisation_bouton)
 Initialisation.grid(column=1, row=0)
@@ -54,32 +83,7 @@ Reprendre.grid(column=1, row=0)
 # fonctions
     #fonctions pour les integrer dans les boutons 
 
-def Initialisation_bouton():
-    pass
 
-def Aleatoire_bouton():
-    pass
-
-def Sauvegarder_bouton():
-    pass
-
-def Charge_bouton():
-    pass
-
-def Additionner_bouton():
-    pass
-
-def Soustraire_bouton():
-    pass
-
-def Stabiliser_bouton():
-    pass
-
-def Interrompre_bouton():
-    pass
-
-def Reprendre_bouton():
-    pass
 #Faire des listes de lite 
 
 l = [[4, 5, 2], [4, 3, 0], [1, 5, 4]]
@@ -120,19 +124,34 @@ root.mainloop()
 
     #Boutons Presets 
 
-Random = tk.Button(root, text="Random", fg="black", command=)
+def Random_bouton():
+    pass
+
+def Pile_centree_bouton():
+    pass
+
+def Max_stable_bouton():
+    pass
+
+def Double_max_stable_bouton():
+    pass
+
+def Indentify_bouton():
+    pass
+
+Random = tk.Button(root, text="Random", fg="black", command= Random_bouton)
 Random.grid(column = 1, row = 1)
 
-Pile_centree = tk.Button(root, text="pile centrée", fg="black", command=)
+Pile_centree = tk.Button(root, text="pile centrée", fg="black", command= Pile_centree_bouton)
 Pile_centree.grid(column = 1, row = 1)
 
-Max_stable = tk.Button(root, text="Max stable", fg="black", command=)
+Max_stable = tk.Button(root, text="Max stable", fg="black", command= Max_stable_bouton)
 Max_stable.grid(column = 1, row = 1)
 
-Double_max_stable = tk.Button(root, text="Double max stable", fg="black", command=)
+Double_max_stable = tk.Button(root, text="Double max stable", fg="black", command= Double_max_stable_bouton)
 Double_max_stable.grid(column = 1, row = 1)
 
-Identify = tk.Button(root, text="Identity", fg="black", command=)
+Identify = tk.Button(root, text="Identity", fg="black", command= Indentify_bouton)
 Identify.grid(column = 1, row = 1)
 
 
