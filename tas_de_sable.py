@@ -21,31 +21,31 @@ import random as rd
 #Boutons 
     #de base
 
-Initialisation = tk.Button(root, text="Initialisation", fg="black", command=)
+Initialisation = tk.Button(root, text="Initialisation", fg="black", command= Initialisation_bouton)
 Initialisation.grid(column=1, row=0)
 
-Aleatoire = tk.Button(root, text="Aleatoire", fg="black", command=)
+Aleatoire = tk.Button(root, text="Aleatoire", fg="black", command= Aleatoire_bouton)
 Aleatoire.grid(column=1, row=0)
 
-Sauvegarder = tk.Button(root, text="Sauvergarder", fg="black", command=)
+Sauvegarder = tk.Button(root, text="Sauvergarder", fg="black", command= Sauvegarder_bouton)
 Sauvegarder.grid(column=1, row=0)
 
-Charge = tk.Button(root, text="Charge", fg="black", command=)
+Charge = tk.Button(root, text="Charge", fg="black", command= Charge_bouton)
 Charge.grid(column=1, row=0)
 
-Additionner = tk.Button(root, text="Additionner", fg="black", command=)
+Additionner = tk.Button(root, text="Additionner", fg="black", command= Additionner_bouton)
 Additionner.grid(column=1, row=0)
 
-Soustraire = tk.Button(root, text="Soustraire", fg="black", command=)
+Soustraire = tk.Button(root, text="Soustraire", fg="black", command= Soustraire_bouton)
 Soustraire.grid(column=1, row=0)
 
-Stabiliser = tk.Button(root, text="Stabiliser", fg="black", command=)
+Stabiliser = tk.Button(root, text="Stabiliser", fg="black", command= Stabiliser_bouton)
 Stabiliser.grid(column=1, row=0)
 
-Interrompore = tk.Button(root, text="Interrompre", fg="black", command=)
+Interrompore = tk.Button(root, text="Interrompre", fg="black", command= Interrompre_bouton)
 Interrompore.grid(column=1, row=0)
 
-Reprendre = tk.Button(root, text="Reprendre", fg="black", command=)
+Reprendre = tk.Button(root, text="Reprendre", fg="black", command= Reprendre_bouton)
 Reprendre.grid(column=1, row=0)
 
 ####################
