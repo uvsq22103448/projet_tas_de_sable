@@ -154,6 +154,20 @@ Double_max_stable.grid(column = 1, row = 1)
 Identify = tk.Button(root, text="Identity", fg="black", command= Indentify_bouton)
 Identify.grid(column = 1, row = 1)
 
+# bouton pour aller plus loin faits par Manel
+
+def Edition_bouton():
+    pass
+
+def Taille_bouton():
+    pass
+
+Edition= tk.Button(root, text="Edition", fg="red", command=Edition_bouton)
+Edition.grid(column=1, row=0)
+
+Taille= tk.Button(root, text="Taille", fg="red", command=Taille_bouton)
+Taille.grid(column=1, row=0)
+
 
 #########################
 # partie principale
