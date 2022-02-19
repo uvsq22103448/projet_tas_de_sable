@@ -48,6 +48,23 @@ Interrompore.grid(column=1, row=0)
 Reprendre = tk.Button(root, text="Reprendre", fg="black", command= Reprendre_bouton)
 Reprendre.grid(column=1, row=0)
 
+#Boutons Presets 
+
+Random = tk.Button(root, text="Random", fg="black", command=)
+Random.grid(column = 1, row = 1)
+
+Pile_centree = tk.Button(root, text="pile centrée", fg="black", command=)
+Pile_centree.grid(column = 1, row = 1)
+
+Max_stable = tk.Button(root, text="Max stable", fg="black", command=)
+Max_stable.grid(column = 1, row = 1)
+
+Double_max_stable = tk.Button(root, text="Double max stable", fg="black", command=)
+Double_max_stable.grid(column = 1, row = 1)
+
+Identify = tk.Button(root, text="Identity", fg="black", command=)
+Identify.grid(column = 1, row = 1)
+
 ####################
 # fonctions
     #fonctions pour les integrer dans les boutons 
