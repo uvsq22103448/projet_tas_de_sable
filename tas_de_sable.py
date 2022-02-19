@@ -50,7 +50,34 @@ Reprendre.grid(column=1, row=0)
 
 ####################
 # fonctions
+    #fonctions pour les integrer dans les boutons 
 
+def Initialisation_bouton():
+    pass
+
+def Aleatoire_bouton():
+    pass
+
+def Sauvegarder_bouton():
+    pass
+
+def Charge_bouton():
+    pass
+
+def Additionner_bouton():
+    pass
+
+def Soustraire_bouton():
+    pass
+
+def Stabiliser_bouton():
+    pass
+
+def Interrompre_bouton():
+    pass
+
+def Reprendre_bouton():
+    pass
 #Faire des listes de lite 
 
 l = [[4, 5, 2], [4, 3, 0], [1, 5, 4]]
