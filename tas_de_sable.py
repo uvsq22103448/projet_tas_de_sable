@@ -16,6 +16,37 @@ import random as rd
 ########################
 # constantes
 
+#######################
+
+#Boutons 
+    #de base
+
+Initialisation = tk.Button(root, text="Initialisation", fg="black", command=)
+Initialisation.grid(column=1, row=0)
+
+Aleatoire = tk.Button(root, text="Aleatoire", fg="black", command=)
+Aleatoire.grid(column=1, row=0)
+
+Sauvegarder = tk.Button(root, text="Sauvergarder", fg="black", command=)
+Sauvegarder.grid(column=1, row=0)
+
+Charge = tk.Button(root, text="Charge", fg="black", command=)
+Charge.grid(column=1, row=0)
+
+Additionner = tk.Button(root, text="Additionner", fg="black", command=)
+Additionner.grid(column=1, row=0)
+
+Soustraire = tk.Button(root, text="Soustraire", fg="black", command=)
+Soustraire.grid(column=1, row=0)
+
+Stabiliser = tk.Button(root, text="Stabiliser", fg="black", command=)
+Stabiliser.grid(column=1, row=0)
+
+Interrompore = tk.Button(root, text="Interrompre", fg="black", command=)
+Interrompore.grid(column=1, row=0)
+
+Reprendre = tk.Button(root, text="Reprendre", fg="black", command=)
+Reprendre.grid(column=1, row=0)
 
 ####################
 # fonctions
