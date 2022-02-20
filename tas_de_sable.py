@@ -11,6 +11,7 @@
 
 import tkinter as tk
 import random as rd
+import os
 
 
 ########################
@@ -45,7 +46,11 @@ def Stabiliser_bouton():
     pass
 
 def Interrompre_bouton():
-    pass
+    if Interrompre == True:
+        pass
+    else:
+        os.system("pause")
+    return
 
 def Reprendre_bouton():
     pass
