@@ -26,6 +26,10 @@ N = 5
 
 # fonctions
 
+root = tk.Tk()
+
+canvas = tk.Canvas(root, height=500, width = 500)
+
 def initialisation():
     grid = []
     
@@ -63,16 +67,11 @@ def Soustraire_bouton():
     pass
 
 def Stabiliser_bouton():
-    for i in range(len(l)):
-        for j in range(len(i)):
             
 
 def Interrompre_bouton():
-    if Interrompre == True:
-        continue
-    else:
-        os.system("pause")
-    return
+    pass
+    
 
 def Reprendre_bouton():
     pass
@@ -134,7 +133,7 @@ Soustraire.grid(column=1, row=0)
 Stabiliser = tk.Button(root, text="Stabiliser", fg="black", command= Stabiliser_bouton)
 Stabiliser.grid(column=1, row=0)
 
-Interrompre = tk.Button(root, text="Interrompre", fg="black", command= Interrompre_bouton)
+Interrompre = tk.Button(root, text="Interrompre", fg="black", command=Interrompre_bouton)
 Interrompre.grid(column=1, row=0)
 
 Reprendre = tk.Button(root, text="Reprendre", fg="black", command= Reprendre_bouton)
