@@ -43,11 +43,13 @@ def Soustraire_bouton():
     pass
 
 def Stabiliser_bouton():
-    pass
+    for i in range(len(l)):
+        for j in range(len(i)):
+            
 
 def Interrompre_bouton():
     if Interrompre == True:
-        pass
+        continue
     else:
         os.system("pause")
     return
