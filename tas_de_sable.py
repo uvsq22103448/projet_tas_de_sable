@@ -54,6 +54,10 @@ def Initialisation_bouton():
 def Aleatoire_bouton():
     pass
 
+#creation d'un fichier txt 
+def fichier():
+    f = open("saves.txt","w")
+
 def Sauvegarder_bouton():
     pass
 
