@@ -67,12 +67,13 @@ def Soustraire_bouton():
     pass
 
 def Stabiliser_bouton():
+    pass
     #Je ne peux rien mettre sinon ça marque qu'il y a un problème
             
 
 def Interrompre_bouton():
     pass
-#?? Je ne sais pas pourquoi ça marque qu'il y a une erreur. 
+ 
 
 def Reprendre_bouton():
     pass
