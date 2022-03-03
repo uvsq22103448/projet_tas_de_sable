@@ -46,7 +46,7 @@ def initialisation():
 def affichage(grid):
     for i in range(len(grid)):
         for j in range(len(grid[i])):
-            canvas.create_text(50, 50, text = str(grid[i][j]))
+            canvas.create_text(15*j, 15*i, text = str(grid[i][j]), anchor="nw")
 
 def Initialisation_bouton():
     pass
