@@ -30,6 +30,39 @@ root = tk.Tk()
 
 canvas = tk.Canvas(root, height=500, width = 500)
 
+def init_affichage(grille):
+    global HAUTEUR, LARGEUR, N
+    couleurs = ["green", "yellow", "goldenrod1", "orange2", "chocolate1", "red", "red3", "darkred"]    
+    hauteur_case = HAUTEUR // N
+    largeur_case = LARGEUR // N
+    color = "gray"
+
+    for i in range(len(grille)):
+        for j in range(len(grille[i])):
+
+            if grille[i][j] == 0:
+                color = couleurs[0]
+            elif grille[i][j] == 1:
+                color = couleurs[1]
+            elif grille[i][j] == 2:
+                color = couleurs[2]
+            elif grille[i][j] == 3:
+                color = couleurs[3]
+            elif grille[i][j] == 4:
+                color = couleurs[4]
+            elif grille[i][j] == 5:
+                color = couleurs[5]
+            elif grille[i][j] == 6:
+                color = couleurs[6]
+            elif grille[i][j] == '#':
+                color="gray"
+            else:
+                color = couleurs[7]
+
+
+            canvas.create_rectangle((j * largeur_case), (i * hauteur_case), (j * largeur_case + largeur_case), (i * hauteur_case + hauteur_case), fill=color)
+            canvas.create_text(((j * largeur_case) + (largeur_case // 2)), ((i * hauteur_case) + (hauteur_case // 2)), text=str(grille[i][j]))
+
 def initialisation():
     grid = []
     
