@@ -62,9 +62,17 @@ def init_affichage(grille):
 
             canvas.create_rectangle((j * largeur_case), (i * hauteur_case), (j * largeur_case + largeur_case), (i * hauteur_case + hauteur_case), fill=color)
             canvas.create_text(((j * largeur_case) + (largeur_case // 2)), ((i * hauteur_case) + (hauteur_case // 2)), text=str(grille[i][j]))
+def preset_pilecentree():
+    global SAUVEGARDE_TMP
+    grille = SAUVEGARDE_TMP
+    grille[N//2][N//2] = int(input("Entrez la valeur que vous voulez mettre au centre"))
+    SAUVEGARDE_TMP = grille
+    return init_affichage(grille)
 
 def initialisation():
     grid = []
+
+
     
     for i in range(N-2):
         grid.append(["#"])
@@ -151,7 +159,7 @@ root = tk.Tk()
 canvas = tk.Canvas(root, height=500, width = 500)
 canvas.grid(column = 0, row = 0)
 
-Initialisation = tk.Button(root, text="Initialisation", fg="black", command= Initialisation_bouton)
+Initialisation = tk.Button(root, text="Initialisation", fg="black", command= initialisation)
 Initialisation.grid(column=1, row=0)
 
 Aleatoire = tk.Button(root, text="Aleatoire", fg="black", command= Aleatoire_bouton)
@@ -183,7 +191,7 @@ Reprendre.grid(column=1, row=0)
 Random = tk.Button(root, text="Random", fg="black", command= Random_bouton)
 Random.grid(column = 1, row = 1)
 
-Pile_centree = tk.Button(root, text="pile centrée", fg="black", command= Pile_centree_bouton)
+Pile_centree = tk.Button(root, text="pile centrée", fg="black", command= preset_pilecentree)
 Pile_centree.grid(column = 1, row = 1)
 
 Max_stable = tk.Button(root, text="Max stable", fg="black", command= Max_stable_bouton)
